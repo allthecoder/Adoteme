@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.addpet.AddPredifinedFieldsFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="Porte" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/animalAddSizeChipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:chipSpacingHorizontal="20dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/smallChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pequeno"
+                android:checked="true"
+                android:checkable="true"
+                style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/mediumChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Médio"
+                android:checkable="true"
+                style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/bigChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grande"
+                android:checkable="true"
+                style="@style/Widget.MaterialComponents.Chip.Choice" />
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/userContactTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="Sexo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/animalAddGenderChipGroup"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipSpacingHorizontal="20dp"
+            app:singleSelection="true"
+            app:layout_constraintTop_toBottomOf="@+id/userContactTextView">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/maleChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:checkable="true"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:text="Macho" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/femaleChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:text="Fêmea" />
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sociavel com"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/animalAddSociabilitiesChipGroup"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:chipSpacingHorizontal="20dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/strangersChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estranhos"
+                android:checkable="true"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/dogsChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cachorros"
+                android:checkable="true"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/catsChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gatos"
+                android:checkable="true"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/otherAnimalsChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Outros Animais"
+                android:checkable="true"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/kidsChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crianças"
+                android:checkable="true"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/userAddressTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Personalidade"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/animalAddTemperChipGroup"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:chipSpacingHorizontal="20dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/agressiveChip"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="Agressivo" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/neutralChip"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="Neutro" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/calmChip"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="Passivo" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/playfulChip"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="Brincalhão" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/shyChip"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="Tímido" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/sociableChip"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="Social" />
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/userNicknameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saúde"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="10dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/animalsAddHealtChipGroup"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:chipSpacingHorizontal="20dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/vaccinetedChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vacinado"
+                android:checkable="true"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/foodRestrictionChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restrição Alimentar"
+                android:checkable="true"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/healthyChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saudável"
+                android:checkable="true"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/indisposedChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indisposto"
+                android:checkable="true"
+                style="@style/Widget.MaterialComponents.Chip.Filter" />
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+</LinearLayout>

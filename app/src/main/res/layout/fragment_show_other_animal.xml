@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.showpet.ShowOtherAnimalFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:text="Espécie"
+        android:textSize="16dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/showSpeciesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:textSize="16dp"
+        android:text="Habitat" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:gravity="center">
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:id="@+id/showOtherAnimalHabitatChipGroup">
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:checkable="true"
+                android:layout_height="wrap_content"
+                android:text="Externo"
+                android:id="@+id/showOutdoorsChip"/>
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:checkable="true"
+                android:layout_height="wrap_content"
+                android:text="Interno"
+                android:id="@+id/showIndoorsChip"/>
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:checkable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aquario"
+                android:id="@+id/showAquariumChip"/>
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:checkable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Outro"
+                android:id="@+id/showOtherHabitatChip"/>
+
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+</LinearLayout>

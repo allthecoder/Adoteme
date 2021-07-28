@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    tools:context=".ui.profile.InstProfileFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="@string/displaySite"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="0dp">
+
+        <TextView
+            android:id="@+id/userSiteTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="16sp"
+            android:inputType="textPersonName" />
+
+        <ImageButton
+            android:id="@+id/changeUserSiteButton"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            app:srcCompat="@drawable/ic_baseline_edit_24" />
+    </LinearLayout>
+
+</LinearLayout>

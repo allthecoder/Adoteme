@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Adote.NoActionBar"
+    tools:context=".ui.profile.ConfiguracoesActivity">
+
+    <include
+        android:id="@+id/app_bar_main"
+        layout="@layout/app_bar_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userPhotoCircleImageView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:srcCompat="@drawable/adoteme"
+        app:civ_border_color="#FFFFFFFF"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.255" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:orientation="vertical"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/userPhotoCircleImageView"
+       app:layout_constraintVertical_bias="0.047">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingTop="5dp"
+           android:text="Nome"
+           android:textSize="16sp"
+           android:textStyle="bold" />
+
+       <LinearLayout
+           android:id="@+id/linearLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:padding="0dp"
+           android:paddingLeft="16dp"
+           android:paddingRight="16dp"
+           android:paddingBottom="0dp">
+
+           <TextView
+               android:id="@+id/userNameTextView"
+               android:layout_width="fill_parent"
+               android:layout_height="28dp"
+               android:layout_weight="1"
+               android:ems="10"
+               android:textSize="16sp"
+               android:inputType="textPersonName" />
+
+           <ImageButton
+               android:id="@+id/changeUserNameButton"
+               android:layout_width="28dp"
+               android:layout_height="28dp"
+               app:srcCompat="@drawable/ic_baseline_edit_24" />
+       </LinearLayout>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingTop="5dp"
+           android:text="@string/displayContato"
+           android:textSize="16sp"
+           android:textStyle="bold" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:padding="0dp"
+           android:paddingLeft="16dp"
+           android:paddingRight="16dp"
+           android:paddingBottom="0dp">
+
+           <TextView
+               android:id="@+id/userContactTextView"
+               android:layout_width="fill_parent"
+               android:layout_height="28dp"
+               android:layout_weight="1"
+               android:ems="10"
+               android:textSize="16sp"
+               android:inputType="textPersonName" />
+
+           <ImageButton
+               android:id="@+id/changeUserContactButton"
+               android:layout_width="28dp"
+               android:layout_height="28dp"
+               app:srcCompat="@drawable/ic_baseline_edit_24" />
+       </LinearLayout>
+
+       <TextView
+           android:id="@+id/displayEndereco"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingTop="5dp"
+           android:text="@string/displayEndereco"
+           android:textSize="16sp"
+           android:textStyle="bold" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:padding="0dp"
+           android:paddingLeft="16dp"
+           android:paddingRight="16dp"
+           android:paddingBottom="0dp">
+
+           <TextView
+               android:id="@+id/userAddressTextView"
+               android:layout_width="fill_parent"
+               android:layout_height="28dp"
+               android:layout_weight="1"
+               android:ems="10"
+               android:textSize="16sp"
+               android:inputType="textPersonName" />
+
+           <ImageButton
+               android:id="@+id/changeUserAddressButton"
+               android:layout_width="28dp"
+               android:layout_height="28dp"
+               app:srcCompat="@drawable/ic_baseline_edit_24" />
+       </LinearLayout>
+
+       <FrameLayout
+           android:id="@+id/userExtraInfo"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+
+
+   </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

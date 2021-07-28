@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.addpet.AddDogFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Raça"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/animalRaceChipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:chipSpacingHorizontal="20dp"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:checkable="true"
+                android:id="@+id/straightChip"
+                android:text="Vira-Lata"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_height="wrap_content"
+                android:id="@+id/goldenRetrieverChip"
+                android:checkable="true"
+                android:text="Golden Retriver"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:id="@+id/huskyChip"
+                android:checkable="true"
+                android:text="Husky"/>
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:id="@+id/germanShepherdChip"
+                android:checkable="true"
+                android:text="Pastor Alemão"/>
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Treinado"
+        android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/animalIsTrainedChipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:chipSpacingHorizontal="20dp">
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:checkable="true"
+                android:id="@+id/trainedChip"
+                android:text="Sim" />
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_height="wrap_content"
+                android:id="@+id/notTrainedChip"
+                android:checkable="true"
+                android:text="Não"/>
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:padding="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/browser_actions_bg_grey"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+
+        <ImageView
+            android:id="@+id/petPhotoImageView"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@+id/petNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="5dp"
+            android:text="bananinha"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/petBioTextView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

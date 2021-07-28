@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.addpet.AddBasicInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/animalAddPhotoButton"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="10dp"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@android:drawable/ic_menu_upload" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/animalAddNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Nome (Obrigatório)"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/animalAddAgeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Anos"
+                android:inputType="number" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    <EditText-->
+<!--        android:id="@+id/animalAddAddressEditText"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:layout_marginVertical="10dp"-->
+<!--        android:hint="Endereço (Obrigatório)"-->
+<!--        android:inputType="textPostalAddress" />-->
+
+    <Spinner
+        android:id="@+id/animalAddAddressSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginVertical="10dp" />
+
+    <EditText
+        android:id="@+id/animalAddBioEditText"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:gravity="start|top"
+        android:hint="Bio"
+        android:inputType="textMultiLine" />
+
+</LinearLayout>
